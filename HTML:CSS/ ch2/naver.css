@@ -1,0 +1,782 @@
+* {
+    box-sizing: border-box;
+
+}
+/* * : 모든 테그를 의미 */
+
+html, body, fieldset, ul{
+    margin : 0;
+    padding: 0;
+}
+
+fieldset{
+    border : 0;
+    width: 586px;
+    height: 56px;
+    display: inline-block;
+}
+
+body{
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family:  -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif
+}
+
+/* #fixed {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+    
+} */
+
+
+/* Cascading Style Sheet */
+/* 선택자(selector) # = id*/
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.service_area{
+    position: absolute;
+    top : 12px;
+    right: 27px;
+}
+
+.search_area {
+    position: absolute;
+    top : 50%;
+    left: 268px;
+    margin-top: -28px;
+}
+
+.special_bg{
+    margin: 0 auto;
+    height: 160px;
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e8eb;
+}
+
+.group_flex {
+    /* float:right; */
+    position: relative;
+    width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.logo_area {
+    position: relative;
+    height: 100%;
+}
+
+.logo_area a{
+    text-decoration: none;
+}
+
+.logo_default{
+    /* display: inline-block; */
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    margin: -32px;
+}
+
+.logo_naver{
+
+    width: 222px;
+    height: 52px;
+    display: inline-block;
+    background-image: url(naverimg.png);
+    background-position: 0px -158px;
+
+    /* -webkit-background-size: 444px 439px; */
+    background-size: 444px 439px;
+    background-repeat: no-repeat;
+    /* background: url(naverimg.png) 0px -169px no-repeat; */
+    vertical-align: top;
+    position: relative;
+    /* top: -6px; */
+}
+
+.logo_area h1 span {
+    display: none;
+}
+
+#header-center h2{
+    display: none;
+}
+
+.green_window{
+    /* display: inline-block; */
+    position: relative;
+    width: 582px;
+    height: 52px;
+    border : 2px solid #19ce60; /* hex */
+    border-radius: 2px;
+}
+
+/*
+fieldset{
+    margin-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 0;
+    padding: 12px 0px 12px 10px;
+
+    width: 586px;
+    height: 56;
+    display: inline-block;
+
+    vertical-align: middle;
+    position: relative;
+}
+*/
+
+.input_text{
+    width: 444px;
+    height: 24px;
+    padding : 23px 15px;
+    margin: 1px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    /* vertical-align: top; */
+    color: #000;
+    font-weight: 700;
+    /* display: inline-block; */
+    outline: 0;
+    border: 0;
+}
+.ico_keyboard{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    display: inline-block;
+    width: 21px;
+    height: 12px;
+    background-position: -321px -274px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: -9px 0 0 -4px;
+    background-image: url(naverimg.png);
+    background-size: 443px 431px;
+}
+
+.ico_arr {
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    background-position: -99px -293px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    background-image: url(naverimg.png);
+    background-size: 457px 434px;
+    position: absolute;
+    top: 50%;
+    left: 73%;
+    margin: -5px 0 0 -5px;
+
+}
+
+.logo_area fieldset button {
+    width: 52px;
+    height: 52px;
+    border: none;
+    padding: 0;
+    background-color: #19ce60;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#ico_search{
+    width: 22px;
+    height: 22px;
+    background-image: url(naverimg.png);
+    background-position: -420px -207px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    background-size: 444px 439px;
+}
+/*span은 기본적으로 display가 inline이기 때문에 크기를 지정해 주고 싶을 때는
+inline-block으로 바꿔줘야 한다. */
+
+#gnb {
+    position: relative;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+
+.gnb_inner{
+    position: relative;
+    width: 1130px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.group_nav{
+    overflow: hidden;
+    position: relative;
+    padding: 11px 270px 11px 0;
+}
+
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    /* display: inline-block; */
+}
+
+#gnb .list_nav{
+    float: left;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: -.3px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.nav_item{
+    float:left;
+    margin-left: 12px;
+}
+
+
+#gnb .list_nav .ico_mail {
+
+    width: 21px;
+    height: 21px;
+    background-image: url(naverimg.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: -420px -302px;
+    background-size: 444px 439px;
+    margin: 3px 9px 0 0;
+
+}
+
+i{
+    font-style: normal;
+}
+
+#ico_shoplive {
+    width: 54px;
+    height: 21px;
+    background-image: url(naverimg.png);
+    background-repeat: no-repeat;
+    background-position: -202px -306px;
+    vertical-align: top;
+    background-size: 444px 439px;
+    display: block;
+    margin: 4px 0px 0px 0px;
+}
+
+.ico_tv{
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background-position: -256px -212px;
+    background-repeat: no-repeat;
+    /* vertical-align: top; */
+    background-size: 444px 439px;
+    background-image: url(naverimg.png);
+    margin-bottom: -2px;
+}
+
+.list_nav .nav{
+    display: block;
+    text-decoration: none;
+    color: #19ce60;
+    float: right;
+}
+
+
+/* 
+#gnb .list_nav{
+    color: #19ce60;
+    display: block;
+    text-decoration: none;
+} */
+
+#gnb .list_nav .list_nav{
+    margin-left: 12px;
+}
+
+#container {
+    overflow: auto;
+    position: relative;
+    width: 1130px;
+    padding: 20px 30px;
+    margin: 0 auto;
+    letter-spacing: -.2px;
+}
+
+.column_left{
+    float: left;
+    width: 700px;
+}
+
+#veta_top{
+    width: 700px;
+    height: 135px;
+    background-color: black;
+    margin-bottom: 15px;
+}
+
+.sc_newscast{
+    width: 750px;
+    margin-top: 12px;
+}
+.group_issue{
+    position: relative;
+    padding: 12px 15px 11px 15px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    line-height: 24px;
+}
+.group_issue::after{
+    content: "";
+    display: table;
+    table-layout: fixed;
+    clear: both;
+}
+
+.issue_area{
+    float: left;
+}
+
+.link_media{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    position: relative;
+    max-width: 89px;
+    padding-right: 12px;
+    margin-right: 7px;
+    font-size: 13px;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -.3px;
+}
+
+.link_media::after{
+    position: absolute;
+    top: 7px;
+    right: 0;
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    background-position: -183px -332px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    background-image: url(naverimg.png);
+    background-size: 457px 434px;
+}
+
+.column_right{
+    float: right;
+    width: 350px;
+}
+
+.column_fix_wrap{
+    position: relative;
+    width: 350px;
+    background-color: #fff;
+}
+
+.direct_area{
+    float: right;
+    font-weight: 700;
+}
+
+.link_news, .link_direct{
+    color: #3565c9;
+    float: left;
+    height: 24px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.link_news::after{
+    background-color: #c8ccd1;
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: top;
+    content: '';
+    margin-left: 5px;
+    vertical-align: 3px;
+}
+
+.link_direct{
+    margin: 0 4px 0 7px;
+    color: #202020;
+}
+
+.newscast .group_title{
+    padding: 22px 0 16px;
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+.link_newsstand{
+    float: left;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap
+}
+
+.link_newsstand:before {
+    display: inline-block;
+    width: 27px;
+    height: 24px;
+    background-position: 0px -391px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: -6px 0 0 0;
+    background-image: url(naverimg.png);
+    background-size: 457px 434px;
+}
+
+.link_newsstand::after{
+    display: inline-block;
+    width: 7px;
+    height: 11px;
+    background-position: -422px -211px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin-left: 6px;
+    vertical-align: -1px;
+    background-image: url(naverimg.png);
+    background-size: 457px 435px;
+}
+
+.sort_area{
+    float: left;
+    margin-left: 10px;
+}
+.btn_sort{
+    font-size: 14px;
+    color: #505050;
+    text-decoration: none;
+}
+.sort_on{
+    color: #000;
+    font-weight: 700;
+}
+.sort_on::before{
+    background-color: #c7ccd1;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: top;
+    content: '';
+    margin: 0 8px 0 4px;
+    vertical-align: 3px;
+}
+
+.set_area{
+    float: right;
+}
+.btn_set{
+    float: left;
+    padding: 0 9px;
+}
+.ico_list{
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    background-position: -206px -389px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    opacity: .7;
+    background-image: url(naverimg2.png);
+    background-size: 457px 434px;
+}
+.set_on{
+    opacity: 1;
+}
+.ico_title{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-position: -444px -19px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    background-image: url(naverimg2.png);
+    background-size: 457px 434px;
+}
+.ico_set{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-position: 0 -419px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    opacity: .7;
+    background-image: url(naverimg2.png);
+    background-size: 457px 434px;
+    margin: -1px 0 1px;
+}
+
+.sc_login{
+    padding: 16px 16px 12px 17px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+}
+.login_msg{
+    padding-left: 3px;
+    color: grey;
+    margin: auto;
+}
+.link_login{
+    display: block;
+    padding: 15px 0;
+    margin-top: 11px;
+    background-color: #19ce60;
+    border: 1px solid #15c654;
+    border-radius: 2px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+.ico_naver{
+    display: inline-block;
+    width: 60px;
+    height: 12px;
+    background-position: -138px -330px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 2px 5px 0 0;
+    background-image: url(naverimg2.png);
+    background-size: 457px 434px;
+}
+
+.link_look{
+    color: #404040;
+    text-decoration: none;
+}
+.look_box{
+    float: left;
+}
+.login_sub_area{
+    margin: 14px 8px 0 4px;
+    height: 16px;
+}
+.look_box::before{
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    background-position: -444px -98px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: -1px 1px 1px;
+    background-image: url(naverimg2.png);
+    background-size: 457px 434px;
+}
+
+.link_look+::before{
+    background-color: #d7dce0;
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    content: '';
+    margin: 0 5px 0 2px;
+    vertical-align: 3px;
+}
+.link_join{
+    float: right;
+    color: #505050;
+    text-decoration: none;
+}
+.link_join::before{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-position: -444px -129px;
+    background-repeat: no-repeat;
+    content: '';
+    margin: 2px 5px -1px 0;
+    background-image: url(naverimg2.png);
+    background-size: 457px 434px;
+}
+.sc_timesquare{
+    position: relative;
+    height: 47px;
+    margin: 12px 0;
+    border: 1px solid #dae1e6;
+    letter-spacing: -.25px;
+}
+.card_wrap{
+    overflow: hidden;
+    height: 47px;
+    padding-right: 67px;
+}
+.card_nav{
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    overflow: hidden;
+}
+.btn_nav{
+    float: left;
+    background-color: #fff;
+    border: 1px solid #e4e8eb;
+}
+.btn_prev::before{
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    background-position: -408px -66px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 7px 8px 6px;
+    background-image: url(naverimg2.png);
+    background-size: 457px 434px;
+}
+.btn_nav+{
+    margin-left: -1px;
+}
+.btn_next::before{
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    background-position: -444px -421px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 7px 8px 6px;
+    background-image: url(naverimg2.png);
+    background-size: 457px 434px;
+}
+
+.newsstand_div{
+    position: relative;
+    /* background-color:#f7f9fa; */
+    border: 1px solid #dae1e6;
+    height: 260px;
+    /* border-width: 0 1px; */
+}
+.thumb_box{
+    position: relative;
+    float: left;
+    height: 65px;
+}
+.thumb_box ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.thumb_box li{
+    float: left;
+    width: 116px;
+    height: 65px;
+    text-align: center;
+    border-right: 1px solid #f1f3f6;
+    border-bottom: 1px solid #f1f3f6;
+
+}
+.thumb_box li img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sc_themecast{
+    padding: 35px 0 27px;
+    letter-spacing: -.25px;
+    height: 2000px;
+    background-color:#f7f9fa;
+    /* border: 1px solid #dae1e6; */
+
+}
+
+#veta_branding_inner{
+    width: 350px;
+    height: 200px;
+    /* background-color:#f7f9fa; */
+    border: 1px solid #dae1e6;
+}
+
+#themecast .group_title{
+    overflow: hidden;
+    padding-bottom: 17px;
+}
+.title_area{
+    float: left;
+}
+.title{
+    font-size: 14px;
+    color: #000;
+}
+.dsc{
+    margin-left: 8px;
+    color: grey;
+}
+.info_area{
+    float: right;
+}
+.info{
+    color: grey;
+}
+.new{
+    color: #000;
+}
+.info_area .btn_set{
+    position: relative;
+    margin-left: 14px;
+    color: #505050;
+}
+.info_area .btn_set::before{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-position: -444px -168px;
+    background-repeat: no-repeat;
+    content: '';
+    margin-right: 2px;
+    vertical-align: -1px;
+    opacity: .7;
+    background-image: url(naverimg2.png);
+    background-size: 457px 434px;
+}
+
+/* #header-center h1{
+
+} /* 자손 선택자 */  

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head lang="Ko">
+        <meta charset="utf-8" />
+        <title>NAVER</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+        <link rel="stylesheet" href="./naver.css"> <!--html 파일에 css 파일 연결-->
+    </head>
+    <body>
+      <header>
+        <!-- <div id="fixed"></div> -->
+        <div class="special_bg"> <!-- 가운데 정렬은 div -->
+          <!-- 속성명: 속성값; 속성명2: 속성값2; -->
+          <!-- <div margin: 0 auto; width: 1080px;-->
+            <!-- 인라인 스타일 (html에 css를 입힌 것, 권장하지는 않음.) -->
+          <div class="group_flex">
+            <div class = "logo_area">
+                <h1 class="logo_default">
+                  <a href="https://www.naver.com" class = "logo_naver"> 
+                    <span>네이버</span>
+                  <!-- 속성 attribute -->
+                  <!-- 주석 comment -->
+                  </a>
+                </h1>
+                  <div class="service_area">
+                    <span style="display: inline-block;">네이버를 시작페이지로</span>
+                    <span style="display: inline-block;">쥬니어네이버</span>
+                    <span style="display: inline-block;">해피빈</span>
+                    <!--inline / inline-block 의 차이점 : inline은 범위 안에만 들어 갈 수 있고
+                    inline-block은 값을 지정할 수 있다.(ex) width, height-->
+                  </div>
+              <div class="search_area">
+                <h2 class="blind">검색창</h2>
+                <!--id는 html에서 한번 만 사용할 수 있다.-->
+                <!--class는 같은 이름 클래스를 여러 번 사용할 수 있다.
+                    클래스 안에서 여러개 사용할 수 있다.-->
+                  <fieldset >
+                    <div class="green_window">
+                        <legend class="blind">검색</legend>
+                        <input class="input_text"/>
+                    </div>
+                        <button>
+                          <span class="blind">검색</span>
+                          <span id="ico_search"></span>
+                        </button>
+                        <!-- <input type = "checkbox"/> 다중선택 -->
+                        <!-- <input type = "checkbox"/> -->
+                        <!-- <input type = "radio" name = "group"/> 양자택일 -->
+                        <!-- <input type = "radio" name = "group"/> -->
+                  </fieldset>
+              </div>
+              <span class="blind">한글 입력기</span>
+              <span class="ico_keyboard"></span>
+              <span class="blind">자동완성 레이어</span>
+              <span class="ico_arr"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav>
+        <div class="center-align" id="gnb">
+          <div class="gnb_inner">
+            <div class="group_nav">
+              <ul class="list_nav type_fix"> <!-- unordered list --> <!-- ol 태그도 있음 ordered list -->
+                <li class="nav_item">
+                  <a href="https://mail.naver.com/"><i class="ico_mail"></i></a>                  
+                  <a href="https://mail.naver.com/" class="nav">                  
+                    메일
+                  </a>
+                </li>
+                <li class="nav_item">
+                  <a href="https://section.cafe.naver.com/ca-fe/"class="nav">
+                  카페
+                  </a>
+                </li>  <!-- list item -->
+                <li class="nav_item">
+                  <a href="https://section.blog.naver.com" class="nav">
+                  블로그
+                  </a>
+                </li> <!-- list item -->
+                <li class="nav_item">
+                  <a href="https://kin.naver.com/"class="nav">
+                    지식iN
+                  </a>
+                  </li> <!-- list item -->
+                <li class="nav_item">
+                  <a href="https://shopping.naver.com/"class="nav">
+                  쇼핑
+                  </a>
+                </li>  <!-- list item -->
+                <li class="nav_item">
+                  <a href="https://shoppinglive.naver.com/"class="nav">
+                  <span class="blind">쇼핑LIVE</span>
+                  <span id = "ico_shoplive"></span>
+                  </a>
+                </li>  <!-- list item -->
+                <li class="nav_item">
+                  <a href="https://order.pay.naver.com/"class="nav"> 
+                  Pay
+                  </a>
+                </li> <!-- list item -->
+                <li class="nav_item">
+                  <a href="https://tv.naver.com/"class="nav">
+                  <i class="ico_tv"></i>
+                  TV
+                  </a>
+                </li> <!-- list item -->
+              </ul>
+              <ul class="list_nav NM_FAVORITE_LIST">
+                <li class="nav_item">사전</li>
+                <li class="nav_item">뉴스</li>
+                <li class="nav_item">증권</li>
+                <li class="nav_item">부동산</li>
+                <li class="nav_item">지도</li>
+                <li class="nav_item">VIBE</li>
+                <li class="nav_item">책</li>
+                <li class="nav_item">웹툰</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="container" role="main">
+
+        <div id="NM_INT_LEFT" class="column_left">
+          <div id="veta_top"></div>
+          <div id="newsstand" class="newscast">
+            <h2 class="blind">뉴스스탠드</h2>
+            <div id="NM_NEWSSTAND_HEADER" class="group_issue">
+              <div class="issue_area">
+                <a class="link_media" href="https://news.naver.com">
+                  연합뉴스
+                </a>
+                <div id="NM_ONLINE_ROLLING" class="list_issue">
+                  <a>
+
+                  </a>
+
+                </div>
+              </div>
+              <div class="direct_area">
+                <a href="https://news.naver.com/" class="link_news">
+                뉴스홈
+                </a>
+                <a href="https://entertain.naver.com/home" class="link_direct">연예</a>
+                <a href="https://sports.news.naver.com/index" class="link_direct">스포츠</a>
+                <a href="https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=101" class="link_direct">
+                  경제</a>
+              </div>
+            </div>
+            <div id="NM_NEWSSTAND_TITLE" class="group_title">
+              <a href="https://newsstand.naver.com/" class="link_newsstand">
+                뉴스스탠드
+              </a>
+              <div id="NM_NEWSSTAND_data_button" class="sort_area">
+                <a role="button" class="btn_sort">구독한 언론사</a>
+                <a role="button" class="btn_sort sort_on">
+                  전체언론사</a>
+              </div>
+              
+              <div id="NM_NEWSSTAND_view_button" class="set_area">
+                <a role="button" class="btn_set">
+                  <i class="ico_list">
+                    <span class="blind">리스트형</span>
+                  </i>
+                </a>
+                <a class="btn_set set_on">
+                  <i class="ico_title">
+                    <span class="blind">썸네일형</span>
+                  </i>
+                </a>
+                <a class="btn_set">
+                  <i class="ico_set">
+                    <span class="blind">설정</span>
+                  </i>
+                </a>
+              
+              </div>
+              
+            </div>
+            
+            <div class="newsstand_div">
+              <div class="thumb_box">
+              <!-- <ol>
+                <li>충격)어쩌구 저쩌구 요요 요 헤이...</li>
+                <li>속보)욜래절래절래 자라 라라랄</li>
+                <li>중대발표: 라랄라랄랄라라랄랄</li>
+              </ol> -->
+              <!-- <h3>언론사 목록</h3> -->
+              <ul>
+                <li><img src = "./서울신문.png" height="21" alt = "서울신문" /></li>
+                <li><img src = "연합뉴스.png" height="21" alt = "연합뉴스" /></li>
+                <li><img src = "경향신문.png" height="21" alt = "경향신문" /></li>
+                <li><img src = "jtbc.png" height="21" alt = "JTBC" /></li>
+                <li><img src = "./서울신문.png" height="21" alt = "서울신문" /></li>
+                <li><img src = "연합뉴스.png" height="21" alt = "연합뉴스" /></li>
+                <li><img src = "경향신문.png" height="21" alt = "경향신문" /></li>
+                <li><img src = "jtbc.png" height="21" alt = "JTBC" /></li>
+                <li><img src = "./서울신문.png" height="21" alt = "서울신문" /></li>
+                <li><img src = "연합뉴스.png" height="21" alt = "연합뉴스" /></li>
+                <li><img src = "경향신문.png" height="21" alt = "경향신문" /></li>
+                <li><img src = "jtbc.png" height="21" alt = "JTBC" /></li>
+                <li><img src = "./서울신문.png" height="21" alt = "서울신문" /></li>
+                <li><img src = "연합뉴스.png" height="21" alt = "연합뉴스" /></li>
+                <li><img src = "경향신문.png" height="21" alt = "경향신문" /></li>
+                <li><img src = "jtbc.png" height="21" alt = "JTBC" /></li>
+                <li><img src = "./서울신문.png" height="21" alt = "서울신문" /></li>
+                <li><img src = "연합뉴스.png" height="21" alt = "연합뉴스" /></li>
+                <li><img src = "경향신문.png" height="21" alt = "경향신문" /></li>
+                <li><img src = "jtbc.png" height="21" alt = "JTBC" /></li>
+                <li><img src = "./서울신문.png" height="21" alt = "서울신문" /></li>
+                <li><img src = "연합뉴스.png" height="21" alt = "연합뉴스" /></li>
+                <li><img src = "경향신문.png" height="21" alt = "경향신문" /></li>
+                <li><img src = "jtbc.png" height="21" alt = "JTBC" /></li>
+              </ul>
+              </div>
+            </div>
+
+          </div>
+          <div id="NM_THEMECAST_CONTENTS_CONTAINER">
+            <div id="themecast" class="sc_themecast id_living">
+                <h2 class="blind">주제별 케스트</h2>
+                <div class="group_title">
+                    <div class="title_area">
+                        <strong class="title">오늘 읽을만한 글</strong>
+                        <span class="dsc">주제별로 분류된 다양한 글모음</span>
+                      </div>
+                    <div class="info_area">
+                      <span class="info">
+                        <strong class="new">908</strong>
+                         개의 글
+                      </span>
+                      <a class="btn_set">
+                        관심주제 설정
+                      </a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- <h3>로그인</h3>
+          <h3>뉴스</h3>      
+          <h3>법률</h3>
+          <h3>쇼핑</h3> -->
+        </div>
+        <div id="NM_INT_RIGHT" class="column_right">
+          <div class="column_fix_wrap"></div>
+          <div class="da_brand"></div>
+          <div id="account" class="sc_login">
+            <h2 class="blind">로그인</h2>
+            <p class="login_msg">네이버를 더 안전하고 편리하게 이용하세요</p>
+            <a href="" class="link_login">
+              <i class="ico_naver">
+                <span class="blind">네이버</span>
+              </i>
+            </a>
+            
+            <div class="login_sub_area">
+                <div class="look_box">
+                  <a href="https://nid.naver.com/user2/help/idInquiry.nhn?menu=idinquiry" class="link_look">
+                    아이디</a>
+                  <a href="https://nid.naver.com/user2/help/pwInquiry.nhn?menu=pwinquiry" class="link_look">
+                    비밀번호찾기</a>
+                </div>
+                <a class="link_join" href="https://nid.naver.com/user2/V2Join?m=agree&lang=ko_KR&cpno=">
+                회원가입
+                </a>
+            </div>
+          </div>
+          <div id="timesquare" class="sc_timesquare">
+            <h2 class="blind">타임스퀘어</h2>
+            <div class="card_wrap">
+              <div class="card_nav">
+                <a role="button" class="btn_nav btn_prev">
+                  <span class="blind">이전</span>
+                </a>
+                <a class="btn_nav btn_next">
+                  <span class="blind">다음</span>
+                </a>
+              </div>
+              <div id="NM_TS_ROLLING_WRAP"></div>
+            </div>
+          </div>
+
+          <div id="veta_branding">
+            <div id="veta_branding_inner"></div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- <footer>
+        <div>공지사항</div>
+        <div>Creaters</div>
+        <div>회사소개</div>
+      </footer> -->
+    </body>
+</html>
